@@ -1,0 +1,10 @@
+#!/bin/bash
+
+time ./test > test.out
+echo "Serial"
+tail -n3 test.out
+echo "Threaded"
+tail -n3 test.out
+time ./test_omp > test_omp.out
+echo "=========="
+echo `paste test.out test_omp.out | head -n30`

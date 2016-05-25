@@ -1,0 +1,5 @@
+#!/bin/bash
+
+ g++-4.8 -g test.cpp -I/Users/cnerg/thread/moab/include -L/Users/cnerg/thread/moab/lib -lMOAB -ldagmc -lhdf5 -o test -std=c++11
+
+ g++-4.8 -g test.cpp -I/Users/cnerg/thread/moab/include -L/Users/cnerg/thread/moab/lib -lMOAB -ldagmc -lhdf5 -o test_omp -fopenmp -std=c++11
